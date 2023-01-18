@@ -1,0 +1,11 @@
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    background-image:  url(../img/background/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    @import "./header";
+}
