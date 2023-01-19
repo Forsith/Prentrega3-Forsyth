@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -14,10 +13,14 @@
   font-family: Nave;
   src: url(../fuentes/BebasNeue-Regular.otf);
 }
+@font-face {
+  font-family: todo;
+  src: url(/assets/fuentes/Montserrat-Bold.ttf);
+}
 body {
   width: 100%;
   height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: todo;
   background-image: url(../img/background/Background.jpg);
   background-repeat: no-repeat;
   background-position: center;
