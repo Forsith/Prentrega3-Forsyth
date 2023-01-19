@@ -2,65 +2,60 @@
     width: 1240px; margin: auto;
     display: flex; margin-top: 10px;
     flex-direction: column;
-    transition: all .5s;}
-.aviso-box{
-    height: 200px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.aviso-box input{
-    width: 50%; height: 40px;
-    background-color: rgba(0, 0, 0, 0.398);;
-    text-align: center;
-    border-radius: 50px;
-    border: solid;
-}
-::placeholder{ color: white;}
-/*            ICONOS DE AYUDA             */
-.metodos-box{
-    display: flex;
-    justify-content: center;
-
-
-}
-.metod1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 400px;
-}
-.metod1 img{
-    width: 200px;
-    height: 200px;
-}
-.metod1 a{
-    color: white;
-    font-size: 21px;
-    text-align: center; 
-}
-/* RESPONSIVE PARA TELEFONO*/ 
-@media screen and (max-width:860px) {
-   .contactos{
-    width: 562px; height: 728px;
-   }
-   .aviso-box input{
-    width: 300px;height: 30px;
-   }
-   .metodos-box{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   }
-
-   .metod1 img{
-    width: 100px;
-    height: 100px;
-   }
+    transition: all .5s;
+    .aviso-box{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            width: 50%; height: 40px;
+            background-color: rgba(0, 0, 0, 0.398);;
+            text-align: center;
+            border-radius: 50px;
+            border: solid;
+            @media screen and (max-width:860px){
+                width: 300px;height: 30px;
+            }
+        }
+        ::placeholder{ color: white;}
     }
+    .metodos-box{
+        display: flex;
+        justify-content: center;
+        .metod1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 400px;
+            img{
+                width: 200px;
+                height: 200px;
+                @media screen and (max-width:860px){
+                    width: 100px;
+                    height: 100px;}
+            }
+            a{
+                color: white;
+                font-size: 21px;
+                text-align: center; 
+            }
+        }
+        @media screen and (max-width:860px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @media screen and (max-width:860px){
+        width: 562px; height: 728px;
+    }
+}
+
+
 @media screen and (max-width:600px) {
     .contactos{
         width: 280px;

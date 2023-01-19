@@ -8,35 +8,37 @@ main{
 .banner{
     text-align: center;
     color: white;
-}
-.banner h2{
-    font-size: 14px;
-    color: rgb(227, 233, 238);
- }
-.banner h1{
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-.banner span{
-    color: aqua;
-}
-.buttom1{
-
-    padding: 10px 30px;
-    background-color: steelblue;
-    color: white;
-    border-radius: 10px;
-}
-.buttom1:hover{
-    background-color: white;
-    color: steelblue;
-    transition: .5s;
-}
-@media screen and (min-width:768px){
-    .banner h1{
-        font-size: 70px;
-     }
-    .banner h2{
-      font-size: 20px;
-    } 
+    h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        span {
+            color: aqua;
+        }
+        @media screen and (min-width: 768px){
+            font-size: 80px;
+        }
+    }
+    h2{
+        font-size: 14px;
+        color: rgb(227, 233, 238);
+        @media screen and (min-width: 768px){
+            font-size: 24px ;
+        }
+    }
+    .buttom1 {
+        padding: 10px 20px;
+        background-color: steelblue;
+        color: white;
+        border-radius: 20px;
+        margin: 0px 10px;
+        font-size: 10px;
+        @media screen and (min-width: 768px){
+            font-size: 15px;     
+        }
+        &:hover{
+            background-color: white;
+            color: steelblue;
+            transition: 0.5s;
+        }
+    }
 }
